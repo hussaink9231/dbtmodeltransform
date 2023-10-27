@@ -23,4 +23,4 @@ models:
   dbtmodeltransform:
     demo:
       schema: demo
-	materialized: table
+        materialized: table
