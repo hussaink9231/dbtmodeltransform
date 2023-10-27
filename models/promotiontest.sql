@@ -42,5 +42,4 @@ as P_DISCOUNT_ACTIVE,
 _airbyte_ab_id,
     _airbyte_emitted_at,
     getdate() as _airbyte_normalized_at
-
-FROM "dev"."demo"."_airbyte_raw_stg_promotion";
+FROM "dev"."demo"."_airbyte_raw_stg_promotion"
