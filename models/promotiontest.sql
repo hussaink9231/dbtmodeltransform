@@ -1,3 +1,5 @@
+{{ config(schema='demo') }}
+
 SELECT cast(JSON_EXTRACT_PATH_TEXT(JSON_SERIALIZE(_airbyte_data),'P_PROMO_SK') as Numeric(38,0))
 as P_PROMO_SK,
 cast(JSON_EXTRACT_PATH_TEXT(JSON_SERIALIZE(_airbyte_data),'P_PROMO_ID') as VARCHAR(16) )
