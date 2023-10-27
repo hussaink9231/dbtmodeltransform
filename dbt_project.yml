@@ -21,6 +21,5 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 models:
   dbtmodeltransform:
-    demo:
-      schema: demo
-        materialized: table
+    schema: demo
+      materialized: table
