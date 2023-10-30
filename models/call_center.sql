@@ -71,3 +71,4 @@ _airbyte_ab_id,
     _airbyte_emitted_at,
     getdate() as _airbyte_normalized_at
 FROM "dev"."demo"."_airbyte_raw_call_center"
+ORDER BY  cast(JSON_EXTRACT_PATH_TEXT(JSON_SERIALIZE(_airbyte_data),'CC_CALL_CENTER_SK') as Numeric(38,0)) desc
